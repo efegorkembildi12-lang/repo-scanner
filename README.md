@@ -4,7 +4,7 @@
 Scans any repository and gives you a score + actionable findings — no sign-up, no network calls, no AI.
 
 ```
-npx repohealth .
+npx repo-scanner .
 ```
 
 ---
@@ -50,12 +50,12 @@ npx repohealth .
 
 **One-off scan (no install needed):**
 ```bash
-npx repohealth .
+npx repo-scanner .
 ```
 
 **Global install:**
 ```bash
-npm install -g repohealth
+npm install -g repo-scanner
 repo-health .
 ```
 
@@ -140,7 +140,7 @@ This makes `repo-health --strict` a useful CI gate:
 ```yaml
 # .github/workflows/health.yml
 - name: Check repo health
-  run: npx repohealth . --strict
+  run: npx repo-scanner . --strict
 ```
 
 ---
