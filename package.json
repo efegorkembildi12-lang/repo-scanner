@@ -1,0 +1,55 @@
+{
+  "name": "repohealth",
+  "version": "0.1.0",
+  "description": "Fast, local git repo health scanner — scores your repo across docs, security, quality, and structure",
+  "main": "dist/index.js",
+  "bin": {
+    "repo-health": "dist/cli.js"
+  },
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node src/cli.ts",
+    "start": "node dist/cli.js",
+    "prepublishOnly": "npm run build"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "cli",
+    "git",
+    "repo",
+    "health",
+    "check",
+    "score",
+    "lint",
+    "security",
+    "devtools",
+    "dx"
+  ],
+  "homepage": "https://github.com/efegorkembildi12-lang/repohealth#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/efegorkembildi12-lang/repohealth.git"
+  },
+  "bugs": {
+    "url": "https://github.com/efegorkembildi12-lang/repohealth/issues"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.0.0",
+    "fast-glob": "^3.3.2",
+    "simple-git": "^3.22.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "license": "MIT"
+}
